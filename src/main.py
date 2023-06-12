@@ -3,7 +3,7 @@ import time
 from rfid import RFID
 from machine import Pin, I2C
 from oled import SSD1306_I2C
-import debian
+import raspi
 from font import printString as write
 
 led = Pin(25, Pin.OUT)
@@ -22,12 +22,12 @@ i2c2 = I2C(1, sda=Pin(26), scl=Pin(27))
 
 oled1 = SSD1306_I2C(128, 64, i2c2)
 oled1.fill(0)
-debian.draw(oled1)
+raspi.draw(oled1)
 oled1.show
 
 oled2 = SSD1306_I2C(128, 64, i2c1)
 oled2.fill(0)
-debian.draw(oled2)
+raspi.draw(oled2)
 oled2.show()
 
 rfid = RFID(sda=1, sck=2, mosi=3, miso=4)
