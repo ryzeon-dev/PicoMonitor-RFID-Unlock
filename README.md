@@ -1,6 +1,8 @@
 # PicoMonitor-RFID-Unlock
 Raspberry Pi Pico based stats monitor &amp; RFID unlock
 
+![Sample](https://github.com/cpy-dev/PicoMonitor-RFID-Unlock/blob/main/sample.png)
+
 # Hardware
 ![Scheme](https://github.com/cpy-dev/PicoMonitor-RFID-Unlock/blob/main/scheme.png)
 
