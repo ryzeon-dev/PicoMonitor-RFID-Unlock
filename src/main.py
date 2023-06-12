@@ -1,12 +1,21 @@
 import sys
 import time
-from lib import start, RFID
+from rfid import RFID
 from machine import Pin, I2C
 from oled import SSD1306_I2C
 import debian
 from font import printString as write
 
-start()
+led = Pin(25, Pin.OUT)
+led.on()
+time.sleep(0.2)
+led.off()
+time.sleep(0.2)
+led.on()
+time.sleep(0.2)
+led.off()
+time.sleep(0.2)
+led.on()
 
 i2c1 = I2C(0, sda=Pin(16), scl=Pin(17))
 i2c2 = I2C(1, sda=Pin(26), scl=Pin(27))
