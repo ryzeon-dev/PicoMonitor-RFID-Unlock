@@ -12,10 +12,11 @@ Raspberry Pi Pico based stats monitor &amp; RFID unlock
 - push button
 
 # Firmware
-For this projects I used MicroPython, it is suggested to do so if you wish to use my code.\
+For this projects I used [MicroPython](https://micropython.org/download/rp2-pico/), it is suggested to do so if you wish to use my code.
 
 # Software
-Code is available in the src directory, all you need to do is to copy the files into you Pico and run it.
+Code is available in the src directory, all you need to do is to copy the files into you Pico and run it. \
+The RFID-MFRC522 is handled using [this library](https://github.com/cpy-dev/RFID-micropython-mfrc522)
 
 # Host code
-The code has been tested and used in linux only. You might need to adapt it in order to use it in other operating systems
+The code has been tested and used in GNU/Linux, and partially on MacOs. You might need to adapt it in order to use it in other operating systems
